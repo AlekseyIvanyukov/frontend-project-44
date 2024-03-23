@@ -1,30 +1,45 @@
 import readlineSync from 'readline-sync';
 
+export { gamerName, isEven };
+
 console.log('Welcome to the brain games');
-const getName = () => {
-  const gamerName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${gamerName}!`);
-  return gamerName;
+const gamerName = readlineSync.question('May I have your name? ');
+console.log(`Hello, ${gamerName}!`);
+console.log('Answer "yes" if the number is even, otherwise answer "no". ');
+
+const randomNumber = Math.floor(Math.random() * 100);
+console.log(`Question: ${randomNumber}`);
+
+const isEven = () => {
+  const evenNumber = randomNumber % 2 === 0;
+  return evenNumber;
 };
 
-const gamerName = getName();
-const isEven = () => {
-  const randomNumber = Math.floor(Math.random() * 100);
-  const evenNumber = randomNumber % 2 === 0;
-  console.log(`Question: ${randomNumber}`);
-  const getAnswer = readlineSync.question('Your answer: ');
+const getAnswer = readlineSync.question('Your answer: ', {
+  trueValue: ['yes'],
+  falseValue: ['no'],
+});
+
+if (isEven() === getAnswer) {
+  console.log('Correct!');
+} else {
+  console.log(`${getAnswer} is wrong answer ;(. Correct answer was ${getAnswer}. \nLet's try again, ${gamerName}!`)
+}
+
+
+
+
+
+
+/*
   for (let i = 0; i < 3; i += 1) {
     (evenNumber === true && getAnswer === 'yes')
-			|| (evenNumber === false && getAnswer === 'no');
+|| (evenNumber === false && getAnswer === 'no');
   }
   return console.log('Correct');
-  /*
 	} else {
-		return console.log(
-			`${getAnswer} is wrong answer ;(. Correct answer was ${getAnswer}. \nLet's try again, ${gamerName}!`
-		);
+	return console.log(
+	`${getAnswer} is wrong answer ;(. Correct answer was ${getAnswer}. \nLet's try again, ${gamerName}!`
+	);
 	}
 */
-};
-
-export { getName, isEven };
