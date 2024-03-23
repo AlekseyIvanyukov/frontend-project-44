@@ -15,31 +15,13 @@ const isEven = () => {
   return evenNumber;
 };
 
-const getAnswer = readlineSync.question('Your answer: ', {
-  trueValue: ['yes'],
-  falseValue: ['no'],
-});
+let correctAnswer;
+(isEven() === true) ? correctAnswer = 'yes' : correctAnswer = 'no';
 
-if (isEven() === getAnswer) {
+const getAnswer = readlineSync.question('Your answer: ');
+
+if (getAnswer === correctAnswer) {
   console.log('Correct!');
 } else {
-  console.log(`${getAnswer} is wrong answer ;(. Correct answer was ${getAnswer}. \nLet's try again, ${gamerName}!`)
+  console.log(`${getAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}. \nLet's try again, ${gamerName}!`);
 }
-
-
-
-
-
-
-/*
-  for (let i = 0; i < 3; i += 1) {
-    (evenNumber === true && getAnswer === 'yes')
-|| (evenNumber === false && getAnswer === 'no');
-  }
-  return console.log('Correct');
-	} else {
-	return console.log(
-	`${getAnswer} is wrong answer ;(. Correct answer was ${getAnswer}. \nLet's try again, ${gamerName}!`
-	);
-	}
-*/
