@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import getName from "../src/cli.js";
-import getEven from "../src/even.js";
+import { getName, isEven } from "../src/even.js";
 
-console.log("welcome to the Brain Games");
-getName();
-getEven();
+//console.log("welcome to the Brain Games");
+//getName();
+console.log('Answer "yes" if the number is even, otherwise answer "no". ');
+isEven();
