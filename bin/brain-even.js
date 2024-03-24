@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { gamerName, isEven } from '../src/even.js';
+import { gamerName, /*isEven*/ } from '../src/even.js';
 
 // console.log("welcome to the Brain Games");
 // getName();
