@@ -6,6 +6,7 @@ import {
 const isEvenGame = () => {
   for (let i = 0; i < roundsCount; i += 1) {
     const getQuestion = getRandomNumber();
+    console.log('Answer \"yes\" if the number is even, otherwise answer \"no\".');
     console.log(`Question: ${getQuestion}`);
     const getAnswer = readlineSync.question('Your answer: ');
     const isEven = () => getQuestion % 2 === 0;
@@ -23,7 +24,5 @@ const isEvenGame = () => {
   }
   console.log(`Congratulations, ${gamerName}!`);
 };
-
-isEvenGame();
 
 export { isEvenGame };
