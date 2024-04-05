@@ -4,9 +4,9 @@ import {
 } from '../src/index.js';
 
 const isEvenGame = () => {
+  console.log('Answer \"yes\" if the number is even, otherwise answer \"no\".');
   for (let i = 0; i < roundsCount; i += 1) {
-    const getQuestion = getRandomNumber();
-    console.log('Answer \"yes\" if the number is even, otherwise answer \"no\".');
+    const getQuestion = getRandomNumber(0, 100);
     console.log(`Question: ${getQuestion}`);
     const getAnswer = readlineSync.question('Your answer: ');
     const isEven = () => getQuestion % 2 === 0;
