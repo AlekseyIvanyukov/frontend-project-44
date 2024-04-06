@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 import {
   gamerName, roundsCount, getRandomNumber, askQuestion,
-} from '../src/index.js';
+} from '../index.js';
 
 const getOperator = () => {
   const operators = ['+', '-', '*'];
