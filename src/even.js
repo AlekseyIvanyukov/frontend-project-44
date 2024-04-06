@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
 import {
-  gamerName, roundsCount, getRandomNumber,
+  gamerName, roundsCount, getRandomNumber, askQuestion,
 } from '../src/index.js';
 
+const question = ('Answer \"yes\" if the number is even, otherwise answer \"no\".');
+askQuestion(question);
+
 const isEvenGame = () => {
-  console.log('Answer \"yes\" if the number is even, otherwise answer \"no\".');
   for (let i = 0; i < roundsCount; i += 1) {
     const getQuestion = getRandomNumber(0, 100);
     console.log(`Question: ${getQuestion}`);

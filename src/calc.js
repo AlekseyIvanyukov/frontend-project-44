@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  gamerName, roundsCount, getRandomNumber
+  gamerName, roundsCount, getRandomNumber, askQuestion,
 } from '../src/index.js';
 
 const getOperator = () => {
@@ -22,17 +22,25 @@ const getExpression = (operandOne, operandTwo, operator) => {
   }
 };
 
-console.log('What is the result of the expression?');
+const question = ('What is the result of the expression?');
+askQuestion(question);
 
 const gameCalc = () => {
   for (let i = 0; i < roundsCount; i += 1) {
-    const randomNumberOne = getRandomNumber(0, 50);
-    const randomNumberTwo = getRandomNumber(0, 50);
+    const randomNumberOne = getRandomNumber(0, 10);
+    const randomNumberTwo = getRandomNumber(0, 10);
     const operator = getOperator();
-//    const getQuestion = randomNumberOne - randomNumberTwo;
     console.log(`Question: ${randomNumberOne} ${operator} ${randomNumberTwo}`);
+    const expression = getExpression(randomNumberOne, randomNumberTwo, operator);
+    const correctAnswer = expression;
     const getAnswer = readlineSync.question('Your answer: ');
+    if (Number(getAnswer) !== correctAnswer) {
+      console.log(`${getAnswer} is wrong answer ;). Correct answer was ${correctAnswer}. \nLet's try again, ${gamerName}!`);
+      return;
+    }
+    console.log('Correct!');
   }
+  console.log(`Congratulations, ${gamerName}!`);
 };
 
 export { gameCalc };
