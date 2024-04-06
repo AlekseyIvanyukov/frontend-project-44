@@ -5,3 +5,5 @@
 [![asciicast](https://asciinema.org/a/bcMRdAMBXR8BRP7Cwga8lsJCw.svg)](https://asciinema.org/a/bcMRdAMBXR8BRP7Cwga8lsJCw)
 #### Калькулятор
 [![asciicast](https://asciinema.org/a/kFOdmshMECeudyKBa2LRS6Kqb.svg)](https://asciinema.org/a/kFOdmshMECeudyKBa2LRS6Kqb)
+#### Наибольший общий делитель
+:[![asciicast](https://asciinema.org/a/4IdmLOHkTTqGfBjvC9yb54b6Z.svg)](https://asciinema.org/a/4IdmLOHkTTqGfBjvC9yb54b6Z)
