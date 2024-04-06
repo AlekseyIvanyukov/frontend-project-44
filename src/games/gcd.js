@@ -23,6 +23,7 @@ const gameGcd = () => {
 
     const correctAnswer = gcd(getRandomNumberOne, getRandomNumberTwo);
     const getAnswer = readlineSync.question('Your answer: ');
+
     if (Number(getAnswer) !== correctAnswer) {
       console.log(`${getAnswer} is wrong answer ;). Correct answer was ${correctAnswer}. \nLet's try again, ${gamerName}!`);
       return;
@@ -31,4 +32,5 @@ const gameGcd = () => {
   }
   console.log(`Congratulations, ${gamerName}!`);
 };
+
 export { gameGcd };
