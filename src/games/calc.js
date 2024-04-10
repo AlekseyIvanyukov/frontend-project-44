@@ -1,4 +1,3 @@
-// import readlineSync from 'readline-sync';
 import { startGame, getRandomNumber } from '../index.js';
 
 const ruleCalc = ('What is the result of the expression?');
@@ -26,7 +25,6 @@ const calcGame = () => {
   const randomNumberOne = getRandomNumber(0, 10);
   const randomNumberTwo = getRandomNumber(0, 10);
   const operator = getOperator();
-  // const expression = getExpression(randomNumberOne, randomNumberTwo, operator);
   const getQuestion = `${randomNumberOne} ${operator} ${randomNumberTwo}`;
   const correctAnswer = String(getExpression(randomNumberOne, randomNumberTwo, operator));  // string
   return [getQuestion, correctAnswer];
