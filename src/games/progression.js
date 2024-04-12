@@ -1,4 +1,3 @@
-// import readlineSync from 'readline-sync';
 import {
   getRandomNumber, startGame,
 } from '../index.js';
@@ -7,20 +6,20 @@ const ruleProgression = ('What number is missing in the progression?');
 
 const progGame = () => {
   const lengthOfProgression = 10;
-//  const randomNumberOne = getRandomNumber(5, 30);
-  const questionElement = getRandomNumber(0, lengthOfProgression);
+  const hiddenElement = getRandomNumber(0, 10);
 
   const getProgression = (n) => Array.from({
     length:
   Math.ceil(lengthOfProgression),
   }, (_, i) => (i + 1) * n);
 
-  console.log(`randomNumberTwo: ${questionElement}`);
-  const randomProgression = getProgression(questionElement);
+  //  console.log(`randomNumberTwo: ${hiddenElement}`);
+  const randomProgression = getProgression(hiddenElement);
+  const beforeHidden = randomProgression.map((item) => (item === randomProgression[hiddenElement] ? ' .. ' : item));
+  const getQuestion = `${beforeHidden.join(' ')}`;
+  const correctAnswer = String(randomProgression[hiddenElement]);
 
-  const getQuestion = `${randomProgression.join(' ')}`;
-  const correctAnswer = String(randomProgression[questionElement]);
-  console.log(`CorrectAnswer: ${randomProgression[questionElement]}`);
+  //  console.log(`CorrectAnswer: ${randomProgression[hiddenElement]}`);
 
   return [getQuestion, correctAnswer];
 };
