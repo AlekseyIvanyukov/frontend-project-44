@@ -15,7 +15,7 @@ const progGame = () => {
 
   //  console.log(`randomNumberTwo: ${hiddenElement}`);
   const randomProgression = getProgression(hiddenElement);
-  const beforeHidden = randomProgression.map((item) => (item === randomProgression[hiddenElement] ? ' .. ' : item));
+  const beforeHidden = randomProgression.map((item) => (item === randomProgression[hiddenElement] ? '..' : item));
   const getQuestion = `${beforeHidden.join(' ')}`;
   const correctAnswer = String(randomProgression[hiddenElement]);
 
