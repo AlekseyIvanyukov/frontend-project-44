@@ -13,13 +13,10 @@ const progGame = () => {
   Math.ceil(lengthOfProgression),
   }, (_, i) => (i + 1) * n);
 
-  //  console.log(`randomNumberTwo: ${hiddenElement}`);
   const randomProgression = getProgression(hiddenElement);
   const beforeHidden = randomProgression.map((item) => (item === randomProgression[hiddenElement] ? '..' : item));
   const getQuestion = `${beforeHidden.join(' ')}`;
   const correctAnswer = String(randomProgression[hiddenElement]);
-
-  //  console.log(`CorrectAnswer: ${randomProgression[hiddenElement]}`);
 
   return [getQuestion, correctAnswer];
 };
