@@ -1,10 +1,9 @@
-Brain games is my first project included 5 games:
-- Parity check
-- Calculator
-- Greatest common divisor
-- Arithmetic progression
-- Prime Numbers
-
+Brain games included 5 games:
+- Brain-even 
+- Brain-calculator
+- Brain-GCD
+- Brain-progression
+- Brain-prime
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AlekseyIvanyukov/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AlekseyIvanyukov/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/AlekseyIvanyukov/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/463fbc2502d06ce17a3f/maintainability" /></a>
@@ -16,10 +15,27 @@ Brain games is my first project included 5 games:
 ### Basic Installation
 Application is installed by running of the following command in your terminal
 #### git clone
+
 ```shell
 git clone https://github.com/AlekseyIvanyukov/frontend-project-44.git
 ```
+
+#### To install games
+
+```shell
+make install
+```
+#### To run games
+
+```shell
+make brain-even
+make brain-calc
+make brain-gcd
+make brain-progression
+make brain-prime
+```
 ## Examples of application
+
 ### Parity check:
 [![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA)
 ### Calculator:
