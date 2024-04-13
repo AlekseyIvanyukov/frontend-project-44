@@ -14,8 +14,10 @@ const progGame = () => {
   }, (_, i) => (i + 1) * n);
 
   const randomProgression = getProgression(hiddenElement);
+
   const beforeHidden = randomProgression.map((item) => (item === randomProgression[hiddenElement] ? '..' : item));
-  const getQuestion = `${beforeHidden.join(' ')}`;
+
+  const getQuestion = beforeHidden.join(' ');
   const correctAnswer = String(randomProgression[hiddenElement]);
 
   return [getQuestion, correctAnswer];
