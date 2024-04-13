@@ -1,18 +1,25 @@
-Brain games is my first project
-## Getting started
-
-
-
+Brain games is my first project included 5 games:
+- Parity check
+- Calculator
+- Greatest common divisor
+- Arithmetic progression
+- Prime Numbers
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AlekseyIvanyukov/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AlekseyIvanyukov/frontend-project-44/actions)
 <a href="https://codeclimate.com/github/AlekseyIvanyukov/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/463fbc2502d06ce17a3f/maintainability" /></a>
+## Getting started
 ### Prerequisites
-
 * node.js last version
 * `git` should be installed
-
-
+* `npm` should be installed
+### Basic Installation
+Application is installed by running of the following command in your terminal
+#### git clone
+```shell
+git clone https://github.com/AlekseyIvanyukov/frontend-project-44.git
+```
+## Examples of application
 ### Parity check:
 [![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA)
 ### Calculator:
