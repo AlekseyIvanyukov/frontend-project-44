@@ -1,4 +1,5 @@
-import { startGame, getRandomNumber } from '../index.js';
+import { startGame } from '../index.js';
+import { getRandomNumber } from '../randomgenerator.js';
 
 const ruleCalc = ('What is the result of the expression?');
 
@@ -17,11 +18,11 @@ const getExpression = (operandOne, operandTwo, operator) => {
     case '*':
       return operandOne * operandTwo;
     default:
-      return ('Unexpected operator');
+      throw new Error(`Unexpected operator ${operator}`);
   }
 };
 
-const calcGame = () => {
+const playCalcGame = () => {
   const randomNumberOne = getRandomNumber(0, 10);
   const randomNumberTwo = getRandomNumber(0, 10);
   const operator = getOperator();
@@ -30,6 +31,6 @@ const calcGame = () => {
   return [getQuestion, correctAnswer];
 };
 
-export const startCalc = () => startGame(ruleCalc, calcGame);
+export const startCalc = () => startGame(ruleCalc, playCalcGame);
 
 export default startCalc;

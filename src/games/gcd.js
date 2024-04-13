@@ -1,23 +1,24 @@
-import { startGame, getRandomNumber } from '../index.js';
+import { startGame } from '../index.js';
+import { getRandomNumber } from '../randomgenerator.js';
 
 const ruleGcd = ('Find the greatest common divisor of given numbers.');
 
-const gcdGame = () => {
+const playGcdGame = () => {
   const getRandomNumberOne = getRandomNumber(1, 31);
   const getRandomNumberTwo = getRandomNumber(1, 31);
   const getQuestion = `${getRandomNumberOne} ${getRandomNumberTwo}`;
 
-  const gcd = (numOne, numTwo) => {
+  const getGcd = (numOne, numTwo) => {
     if (!numTwo) {
       return numOne;
     }
-    return gcd(numTwo, numOne % numTwo);
+    return getGcd(numTwo, numOne % numTwo);
   };
 
-  const correctAnswer = String(gcd(getRandomNumberOne, getRandomNumberTwo));
+  const correctAnswer = String(getGcd(getRandomNumberOne, getRandomNumberTwo));
   return [getQuestion, correctAnswer];
 };
 
-export const startGcd = () => startGame(ruleGcd, gcdGame);
+export const startGcd = () => startGame(ruleGcd, playGcdGame);
 
 export default startGcd;

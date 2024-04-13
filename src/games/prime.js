@@ -1,6 +1,5 @@
-import {
-  getRandomNumber, startGame,
-} from '../index.js';
+import { startGame } from '../index.js';
+import { getRandomNumber } from '../randomgenerator.js';
 
 const rulePrime = ('Answer "yes" if given number is prime. Otherwise answer "no".');
 
@@ -11,7 +10,7 @@ const isPrime = (number) => {
   return number !== 1;
 };
 
-const primeGame = () => {
+const playPrimeGame = () => {
   const upLimitPrimeNumber = getRandomNumber(1, 20);
   const randomPrimeNumber = getRandomNumber(1, upLimitPrimeNumber);
 
@@ -21,6 +20,6 @@ const primeGame = () => {
   return [getQuestion, correctAnswer];
 };
 
-const gamePrime = () => startGame(rulePrime, primeGame);
+const gamePrime = () => startGame(rulePrime, playPrimeGame);
 
 export { gamePrime, rulePrime };
