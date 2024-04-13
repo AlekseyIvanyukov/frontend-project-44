@@ -11,4 +11,4 @@ const isEvenGame = () => {
 
 const startEven = () => startGame(ruleEven, isEvenGame);
 
-export default startEven;
+export { startEven };

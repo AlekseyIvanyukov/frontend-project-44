@@ -26,7 +26,7 @@ const calcGame = () => {
   const randomNumberTwo = getRandomNumber(0, 10);
   const operator = getOperator();
   const getQuestion = `${randomNumberOne} ${operator} ${randomNumberTwo}`;
-  const correctAnswer = String(getExpression(randomNumberOne, randomNumberTwo, operator));  // string
+  const correctAnswer = String(getExpression(randomNumberOne, randomNumberTwo, operator));
   return [getQuestion, correctAnswer];
 };
 

@@ -1,6 +1,4 @@
 import readlineSync from 'readline-sync';
-// import { gameRule } from '../src/games/progression.js';
-// Приветствие
 
 const roundsCount = 3;
 
@@ -26,7 +24,7 @@ const startGame = (printRule, getQuestion) => {
   console.log(`Congratulations, ${gamerName}!`);
 };
 
-// Генератор случайных чисел
+// RandomNumber generator:
 
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
