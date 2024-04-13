@@ -7,19 +7,17 @@ const gcdGame = () => {
   const getRandomNumberTwo = getRandomNumber(1, 31);
   const getQuestion = `${getRandomNumberOne} ${getRandomNumberTwo}`;
 
-  const gcd = (numberOne, numberTwo) => {
-    while (numberTwo) {
-      const temp = numberTwo;
-      numberTwo = numberOne % numberTwo;
-      numberOne = temp;
+  const gcd = (numOne, numTwo) => {
+    if (!numTwo) {
+      return numOne;
     }
-    return numberOne;
+    return gcd(numTwo, numOne % numTwo);
   };
 
   const correctAnswer = String(gcd(getRandomNumberOne, getRandomNumberTwo));
   return [getQuestion, correctAnswer];
 };
 
-const startGcd = () => startGame(ruleGcd, gcdGame);
+export const startGcd = () => startGame(ruleGcd, gcdGame);
 
-export { startGcd };
+export default startGcd;
