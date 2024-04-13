@@ -12,7 +12,7 @@ const isPrime = (number) => {
 };
 
 const primeGame = () => {
-  const upLimitPrimeNumber = getRandomNumber(0, 20);
+  const upLimitPrimeNumber = getRandomNumber(1, 20);
   const randomPrimeNumber = getRandomNumber(1, upLimitPrimeNumber);
 
   const getQuestion = randomPrimeNumber;
