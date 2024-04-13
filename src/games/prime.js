@@ -15,7 +15,7 @@ const primeGame = () => {
   const upLimitPrimeNumber = getRandomNumber(0, 20);
   const randomPrimeNumber = getRandomNumber(1, upLimitPrimeNumber);
 
-  const getQuestion = `my Question ${randomPrimeNumber}`;
+  const getQuestion = randomPrimeNumber;
   const correctAnswer = isPrime(randomPrimeNumber) ? 'yes' : 'no';
 
   return [getQuestion, correctAnswer];

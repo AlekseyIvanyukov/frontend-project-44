@@ -36,13 +36,13 @@ make brain-prime
 ```
 ## Examples of application
 
-### Parity check:
+### Brain-even:
 [![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA)
-### Calculator:
+### Brain-calculator:
 [![asciicast](https://asciinema.org/a/K38s4CdNSFPXdw9m4iFDDfxBu.svg)](https://asciinema.org/a/K38s4CdNSFPXdw9m4iFDDfxBu)
-### Greatest common divisor:
+### Brain-GCD:
 [![asciicast](https://asciinema.org/a/czlDG1iIuQQW9bmFFvJH2Ai6c.svg)](https://asciinema.org/a/czlDG1iIuQQW9bmFFvJH2Ai6c)
-### Arithmetic progression:
+### Brain-progression:
 [![asciicast](https://asciinema.org/a/FzjJYFyfe6Z6mg4747H7H3Ax9.svg)](https://asciinema.org/a/FzjJYFyfe6Z6mg4747H7H3Ax9)
-### Prime numbers:
+### Brain-prime:
 [![asciicast](https://asciinema.org/a/LSHj6xNzoHhjVS8yyYrj88Qpl.svg)](https://asciinema.org/a/LSHj6xNzoHhjVS8yyYrj88Qpl)
