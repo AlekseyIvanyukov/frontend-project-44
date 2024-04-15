@@ -20,7 +20,7 @@ Application is installed by running of the following command in your terminal
 git clone https://github.com/AlekseyIvanyukov/frontend-project-44.git
 ```
 ```shell
-cd frontend-project-44.git
+cd frontend-project-44
 ```
 #### To install games
 ```shell
