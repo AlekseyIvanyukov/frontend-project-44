@@ -24,8 +24,4 @@ const startGame = (printRule, getQuestion) => {
   console.log(`Congratulations, ${gamerName}!`);
 };
 
-// RandomNumber generator:
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min) + min);
-
-export { startGame, getRandomNumber };
+export default startGame;
