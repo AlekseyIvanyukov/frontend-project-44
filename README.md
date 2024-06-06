@@ -49,7 +49,7 @@ make brain-prime
 ## Examples of application
 
 ### Brain-even:
-[![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema./a/6JJmQ5DefaILrOh5hd1is4RUA)
+[![asciicast](https://asciinema.org/a/jxBBtg4xYVW0DE7aa36cOM7Fb.svg)](https://asciinema.org/a/jxBBtg4xYVW0DE7aa36cOM7Fb)
 ### Brain-calculator:
 [![asciicast](https://asciinema.org/a/0QtXYbaiR8LbbCi8bxpB1cjBB.svg)](https://asciinema.org/a/0QtXYbaiR8LbbCi8bxpB1cjBB)
 ### Brain-GCD:
