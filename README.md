@@ -49,9 +49,9 @@ make brain-prime
 ## Examples of application
 
 ### Brain-even:
-[![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA)
+[![asciicast](https://asciinema.org/a/6JJmQ5DefaILrOh5hd1is4RUA.svg)](https://asciinema./a/6JJmQ5DefaILrOh5hd1is4RUA)
 ### Brain-calculator:
-[![asciicast](https://asciinema.org/a/K38s4CdNSFPXdw9m4iFDDfxBu.svg)](https://asciinema.org/a/K38s4CdNSFPXdw9m4iFDDfxBu)
+[![asciicast](https://asciinema.org/a/0QtXYbaiR8LbbCi8bxpB1cjBB.svg)](https://asciinema.org/a/0QtXYbaiR8LbbCi8bxpB1cjBB)
 ### Brain-GCD:
 [![asciicast](https://asciinema.org/a/czlDG1iIuQQW9bmFFvJH2Ai6c.svg)](https://asciinema.org/a/czlDG1iIuQQW9bmFFvJH2Ai6c)
 ### Brain-progression:
